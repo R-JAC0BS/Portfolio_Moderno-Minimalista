@@ -1,0 +1,69 @@
+{
+    "Projects" : [
+        {
+            "id" : 1,
+            "title" : "Meu Portfólio",
+            "description" : "Um portfólio pessoal desenvolvido com Next.js, TypeScript e Tailwind CSS, apresentando minhas habilidades e projetos.",
+            "image" : "/images/portfolio.png",
+            "detalhes" : {
+                "tecnologias" : [
+                    "Next.js",
+                    "TypeScript",
+                    "Tailwind CSS"
+                ],
+                "link" : "github.com"
+                
+            }
+            
+        },
+           {
+            "id" : 2,
+            "title" : "GoBarApi",
+            "description" : "Um portfólio pessoal desenvolvido com Next.js, TypeScript e Tailwind CSS, apresentando minhas habilidades e projetos.",
+            "image" : "/images/portfolio.png",
+            "detalhes" : {
+                "tecnologias" : [
+                    "Next.js",
+                    "TypeScript",
+                    "Tailwind CSS"
+                ],
+                "link" : "github.com"
+                
+            }
+            
+        },
+          {
+            "id" : 3,
+            "title" : "GoBarApi",
+            "description" : "Um portfólio pessoal desenvolvido com Next.js, TypeScript e Tailwind CSS, apresentando minhas habilidades e projetos.",
+            "image" : "/images/portfolio.png",
+            "detalhes" : {
+                "tecnologias" : [
+                    "Next.js",
+                    "TypeScript",
+                    "Tailwind CSS"
+                ],
+                "link" : "github.com"
+                
+            }
+            
+        },
+          {
+            "id" : 4,
+            "title" : "GoBarApi",
+            "description" : "Um portfólio pessoal desenvolvido com Next.js, TypeScript e Tailwind CSS, apresentando minhas habilidades e projetos.",
+            "image" : "/images/portfolio.png",
+            "detalhes" : {
+                "tecnologias" : [
+                    "Next.js",
+                    "TypeScript",
+                    "Tailwind CSS"
+                ],
+                "link" : "github.com"
+                
+            }
+            
+        }
+
+    ]
+}
