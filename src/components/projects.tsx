@@ -1,7 +1,8 @@
 "use client";
-import { useState, useEffect} from "react";
+import { useState, useEffect } from "react";
 
 import { Swiper, SwiperSlide } from "swiper/react";
+import Modal from '@/components/modal'
 import "swiper/css"; // necessário para funcionar corretamente
 
 type Project = {
@@ -9,7 +10,7 @@ type Project = {
   title: string;
   description: string;
   image: string;
-  detalhes: {
+  details: {
     tecnologias: string[];
     link: string;
   };
@@ -17,6 +18,9 @@ type Project = {
 
 export default function Projects() {
   const [projects, setProjects] = useState<Project[]>([]);
+  const [openModal, setOpenModal] = useState(false);
+  const [selectProject, setSelectProject] = useState<Project>();
+
 
   useEffect(() => {
     fetch("/data/projects.json")
@@ -28,8 +32,8 @@ export default function Projects() {
   }, []);
 
   return (
-    <div className="w-8/12 max-w-7xl mx-auto mt-10 inline
-     w-full p-2 ">
+    <div className="w-8/12 max-w-7xl mx-auto mt-10 inline 
+     w-full  pb-5 ">
       <h1 className="text-3xl font-bold mb-3 text-gray-800">Projetos</h1>
       <Swiper
         spaceBetween={20}
@@ -41,19 +45,27 @@ export default function Projects() {
           1024: { slidesPerView: 3 },
         }}
       >
+        <Modal isOpen={openModal} onClose={() => setOpenModal(false)} title={selectProject?.title}
+          description={selectProject?.description} tecnologias={selectProject?.details.tecnologias}
+        ></Modal>
         {projects.map((project) => (
-          <SwiperSlide key={project.id}>
-            <div className="bg-white shadow-md rounded-lg p-4 w- min-h-96 mb-1 hover:transition-transform ease-in-out
-            hover:scale-105 duration-300 ">
+          <SwiperSlide key={project.id} className="">
+            <div className="bg-white  rounded-lg  w- min-h-96 mb-1 hover:transition-transform ease-in-out
+            hover:scale-100 duration-300 ">
               <div></div>
-              <div className="w-full h-48 bg-amber-800 rounded-xl"></div>
-              <div  className="mt-3 font-bold text-gray-800">{project.title}</div>
-            <div className="mt-3 text-gray-800">{project.description}</div>
+              <div className="w-full h-72 inset-shadow-inherit bg-gray-700 rounded-xl"></div>
+              <div className="mt-3 font-bold text-gray-800 m-3">{project.title}</div>
+              <div className="mt-3 text-gray-800 m-3">{project.description}</div>
 
-                <div className=" w-full justify-between flex p-3  ">
-                    <button className="bg-amber-800 cursor-pointer text-white bg-gray-800 rounded-full w-2/5 h-10" >Detalhes</button>
-                    <button className=" cursor-pointer text-black border  rounded-full w-2/5 h-10"> Github</button>
-                </div>
+              <div className=" w-full justify-between flex p-3  ">
+                <button className=" cursor-pointer text-white bg-gray-800 rounded-full w-2/5 h-10 "
+                  onClick={() => {
+                    setOpenModal(true);
+                    setSelectProject(project)
+                  }} >Detalhes</button>
+                <button className=" cursor-pointer text-black border  rounded-full w-2/5 h-10"> <a href={project.details.link} target="_blank">Github</a></button>
+
+              </div>
 
 
             </div>

@@ -5,13 +5,14 @@
             "title" : "Meu Portfólio",
             "description" : "Um portfólio pessoal desenvolvido com Next.js, TypeScript e Tailwind CSS, apresentando minhas habilidades e projetos.",
             "image" : "/images/portfolio.png",
-            "detalhes" : {
+            "details" : {
                 "tecnologias" : [
                     "Next.js",
                     "TypeScript",
-                    "Tailwind CSS"
+                    "Tailwind CSS",
+                    "Java"
                 ],
-                "link" : "github.com"
+                "link" : "https://github.com/R-JAC0BS/Portfolio_Moderno-Minimalista"
                 
             }
             
@@ -21,7 +22,7 @@
             "title" : "GoBarApi",
             "description" : "Um portfólio pessoal desenvolvido com Next.js, TypeScript e Tailwind CSS, apresentando minhas habilidades e projetos.",
             "image" : "/images/portfolio.png",
-            "detalhes" : {
+            "details" : {
                 "tecnologias" : [
                     "Next.js",
                     "TypeScript",
@@ -37,7 +38,7 @@
             "title" : "GoBarApi",
             "description" : "Um portfólio pessoal desenvolvido com Next.js, TypeScript e Tailwind CSS, apresentando minhas habilidades e projetos.",
             "image" : "/images/portfolio.png",
-            "detalhes" : {
+            "details" : {
                 "tecnologias" : [
                     "Next.js",
                     "TypeScript",
@@ -53,7 +54,7 @@
             "title" : "GoBarApi",
             "description" : "Um portfólio pessoal desenvolvido com Next.js, TypeScript e Tailwind CSS, apresentando minhas habilidades e projetos.",
             "image" : "/images/portfolio.png",
-            "detalhes" : {
+            "details" : {
                 "tecnologias" : [
                     "Next.js",
                     "TypeScript",
