@@ -1,8 +1,16 @@
 {
-    "tecnlogias" : [
+    "tecnologias" : [
         "java",
         "JavaScript",
         "TypeScript",
-        "Python"
+        "Python",
+        "Html",
+        "CSS",
+        "Springboot",
+        "React",
+        "PostgresSQL",
+        "MongoDB",
+        "AWS",
+        "docker"
     ]
 }

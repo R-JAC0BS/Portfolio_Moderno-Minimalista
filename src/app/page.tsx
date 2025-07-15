@@ -2,6 +2,8 @@ import HeaderPage from "@/components/HeaderPage";
 import MarginComponent from "@/components/MarginComponent";
 import Projects from "@/components/projects";
 import About from "@/components/About";
+import Tecnologias from "@/components/tecnlogias";
+import Contato from "@/components/contato"
 
 export default function Home() {
   return (
@@ -10,6 +12,8 @@ export default function Home() {
       <MarginComponent />
       <About />
       <Projects />
+      <Tecnologias/>
+      <Contato/>
     </div>
   );
 }

@@ -9,6 +9,7 @@ type ModalProps = {
   children?: React.ReactNode;
   tecnologias?: string[];
   description?: string;
+  image?: string;
 };
 
 export default function Modal({
@@ -18,6 +19,7 @@ export default function Modal({
   children,
   tecnologias,
   description,
+  image
 }: ModalProps) {
   const [visible, setVisible] = useState(false);
   const [animate, setAnimate] = useState(false);
@@ -34,12 +36,15 @@ export default function Modal({
       setTimeout(() => setAnimate(true), 10);
       document.body.style.overflow = "hidden";
       document.getElementById("header")?.classList.add("hidden");
+  
+
     } else {
       setAnimate(false);
       // espera a animação acabar antes de remover do DOM
       setTimeout(() => setVisible(false), 300);
       document.body.style.overflow = "";
       document.getElementById("header")?.classList.remove("hidden");
+  
     }
 
     return () => {
@@ -52,7 +57,7 @@ export default function Modal({
 
   return (
     <div
-      className={`z-[70] fixed inset-0 flex w-full h-full justify-center items-center backdrop-blur-sm  bg-opacity-30 transition-opacity duration-300 ${
+      className={`z-50 fixed inset-0 flex w-full h-full justify-center items-center backdrop-blur-sm  bg-opacity-30 transition-opacity duration-300 ${
         animate ? "opacity-100" : "opacity-0"
       }`}
     >
@@ -62,7 +67,7 @@ export default function Modal({
           ${animate ? "opacity-100 scale-100" : "opacity-0 scale-95"}`}
         onClick={(e) => e.stopPropagation()}
       >
-        <div className="w-full flex justify-end items-end p-2">
+        <div className="w-full flex justify-end items-end ">
           <button onClick={onClose}>
             <IoCloseCircleOutline
               size={30}
@@ -72,8 +77,10 @@ export default function Modal({
           </button>
         </div>
 
-        <div className="w-full h-3/5 flex justify-center items-center p-5 pl-5 pr-5">
-          <div className="w-full h-full bg-gray-600 rounded-2xl shadow-lg"></div>
+        <div className="w-full h-4/6 flex justify-center items-center p-5 pl-5 pr-5">
+          <div className="w-full h-full rounded-2xl shadow-lg ">
+            <img src={image} className="w-full h-full object-cover rounded-2xl"></img>
+          </div>
         </div>
         <div className="pl-5">
           <h1 className="text-gray-800 font-bold text-2xl">{title}</h1>
@@ -94,7 +101,7 @@ export default function Modal({
             href="https://github.com.br"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex bg-black text-white rounded-2xl px-5 py-3 shadow-lg mt-10 hover:bg-gray-800 transition w-48 justify-between"
+            className="flex bg-black text-white rounded-2xl px-5 py-3 shadow-lg mt-5 hover:bg-gray-800 transition w-48 justify-between"
           >
             Ver no GitHub <CiShare1 size={25} />
           </a>

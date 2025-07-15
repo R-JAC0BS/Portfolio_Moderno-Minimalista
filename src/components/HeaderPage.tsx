@@ -12,7 +12,9 @@ export default function HeaderPage() {
   bg-white/30 backdrop-blur-md backdrop-saturate-150
   bg-clip-padding overflow-hidden" id="header"
     >
+      <h2>Roberto Jacobs</h2>
       <ul className="flex flex-col sm:flex-row gap-4 sm:gap-7 items-center font-bold mr-5 cursor-pointer ">
+        
         <li className={`${decoration}`} >Sobre mim</li>
         <li className={`${decoration}`}>Projetos</li>
         <li className={`${decoration}`}>Tecnologias</li>

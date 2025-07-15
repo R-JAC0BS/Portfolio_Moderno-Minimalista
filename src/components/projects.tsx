@@ -47,13 +47,16 @@ export default function Projects() {
       >
         <Modal isOpen={openModal} onClose={() => setOpenModal(false)} title={selectProject?.title}
           description={selectProject?.description} tecnologias={selectProject?.details.tecnologias}
+          image={selectProject?.image}
         ></Modal>
         {projects.map((project) => (
           <SwiperSlide key={project.id} className="">
-            <div className="bg-white  rounded-lg  w- min-h-96 mb-1 hover:transition-transform ease-in-out
+            <div className="bg-white  rounded-lg  w-min-h-96 mb-1 hover:transition-transform ease-in-out
             hover:scale-100 duration-300 ">
-              <div></div>
-              <div className="w-full h-72 inset-shadow-inherit bg-gray-700 rounded-xl"></div>
+              <div></div> 
+              <div className="w-full h-72 inset-shadow-inherit rounded-xl">
+                <img src={project.image } alt="image" className="w-full h-full bg-cover"></img>
+              </div>
               <div className="mt-3 font-bold text-gray-800 m-3">{project.title}</div>
               <div className="mt-3 text-gray-800 m-3">{project.description}</div>
 

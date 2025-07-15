@@ -8,7 +8,7 @@ export default function About() {
 
       {/* Texto e botão */}
       <div className="md:col-span-2 space-y-6">
-        <h1 className="text-3xl font-bold text-gray-800">About Me</h1>
+        <h1 className="text-3xl font-bold text-gray-800">Desenvolvedor Full Stack</h1>
         <p className="text-gray-600 text-justify">
           I am a passionate developer with a love for creating user-friendly
           applications. My expertise lies in web development, particularly in
