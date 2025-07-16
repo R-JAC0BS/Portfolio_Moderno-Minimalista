@@ -3,7 +3,8 @@
         {
             "id" : 1,
             "title" : "Portifólio Minimalista ",
-            "description" : "Um portfólio pessoal desenvolvido com Next.js, TypeScript e Tailwind CSS, apresentando minhas habilidades e projetos.",
+            "description" : 
+            "Um portfólio pessoal desenvolvido com Next.js, TypeScript e Tailwind CSS, apresentando minhas habilidades e projetos.",
             "image" : "../images/PortiFolioMockUp.png",
             "details" : {
                 "tecnologias" : [
@@ -18,27 +19,33 @@
             }
             
         },
+        {
+          "id" : 2,
+          "title" : "CuraBackEnd",
+          "description" : "Um portfólio pessoal desenvolvido com Next.js, TypeScript e Tailwind CSS, apresentando minhas habilidades e projetos.",
+          "image" : "../images/DeckMockUp.png",
+          "details" : {
+              "tecnologias" : [
+                  "Java",
+                  "SprinBoot",
+                  "Python",
+                  "C",
+                  "HTML",
+                  "CSS",
+                  "JavaScript",
+                  "RabbitMQ",
+                  "PostGresSql"
+              ],
+              "link" : "github.com"
+              
+          }
+          
+      },
            {
-            "id" : 2,
-            "title" : "GoBarApi",
-            "description" : "Um portfólio pessoal desenvolvido com Next.js, TypeScript e Tailwind CSS, apresentando minhas habilidades e projetos.",
-            "image" : "../images/PortiFolioMockUp.png",
-            "details" : {
-                "tecnologias" : [
-                    "Next.js",
-                    "TypeScript",
-                    "Tailwind CSS"
-                ],
-                "link" : "github.com"
-                
-            }
-            
-        },
-          {
             "id" : 3,
             "title" : "GoBarApi",
             "description" : "Um portfólio pessoal desenvolvido com Next.js, TypeScript e Tailwind CSS, apresentando minhas habilidades e projetos.",
-            "image" : "../images/PortiFolioMockUp.png",
+            "image" : "../images/MockUpGoBar.png",
             "details" : {
                 "tecnologias" : [
                     "Next.js",

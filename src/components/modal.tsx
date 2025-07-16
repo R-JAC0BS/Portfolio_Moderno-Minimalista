@@ -62,12 +62,12 @@ export default function Modal({
       }`}
     >
       <div
-        className={`bg-white w-3/5 h-5/6 rounded-xl shadow-xl flex flex-col p-5
+        className={`bg-white w-3/5 h-5/6 rounded-2xl shadow-lg flex flex-col p-5
           transform transition-transform duration-300
           ${animate ? "opacity-100 scale-100" : "opacity-0 scale-95"}`}
         onClick={(e) => e.stopPropagation()}
       >
-        <div className="w-full flex justify-end items-end ">
+        <div className="w-full flex justify-end items-end p-2">
           <button onClick={onClose}>
             <IoCloseCircleOutline
               size={30}

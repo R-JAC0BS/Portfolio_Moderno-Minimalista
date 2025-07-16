@@ -30,9 +30,9 @@ export default function Contato() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center p-3 h-1/3 ">
+    <div className="flex flex-col items-center justify-center p-3 h-1/3 resize-none   " id = "contato">
       <h2 className="text-3xl font-bold mb-6 text-gray-800">Entre em contato</h2>
-      <form ref={form} onSubmit={sendEmail} className=" bg-white p-6 rounded-3xl shadow-lg bg-amber-800 w-8/12 items-center justify-center ">
+      <form ref={form} onSubmit={sendEmail} className=" bg-white p-6 rounded-3xl shadow-lg bg-amber-800 w-5/12 items-center justify-center resize-none ">
         <input
           type="text"
           name="name"
@@ -52,7 +52,7 @@ export default function Contato() {
           placeholder="Sua mensagem"
           required
           rows={6}
-          className="w-full mb-4 p-3 border border-gray-300 rounded "
+          className="w-full mb-4 p-3 border border-gray-300 rounded  resize-none"
         ></textarea>
         <button
           type="submit"

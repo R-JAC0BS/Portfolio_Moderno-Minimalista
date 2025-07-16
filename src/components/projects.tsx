@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 
 import { Swiper, SwiperSlide } from "swiper/react";
+import { FaArrowRightArrowLeft } from "react-icons/fa6";
 import Modal from '@/components/modal'
 import "swiper/css"; // necessário para funcionar corretamente
 
@@ -33,8 +34,13 @@ export default function Projects() {
 
   return (
     <div className="w-8/12 max-w-7xl mx-auto mt-10 inline 
-     w-full  pb-5 ">
-      <h1 className="text-3xl font-bold mb-3 text-gray-800">Projetos</h1>
+     w-full  pb-5 " id = "projetos">
+      <div className = "flex align-middle justify-between" >
+        <h1 className="text-3xl font-bold mb-3 text-gray-800">Projetos</h1>
+        <FaArrowRightArrowLeft size = {30}/>
+      </div>
+      
+
       <Swiper
         spaceBetween={20}
         slidesPerView={1}
@@ -52,13 +58,13 @@ export default function Projects() {
         {projects.map((project) => (
           <SwiperSlide key={project.id} className="">
             <div className="bg-white  rounded-lg  w-min-h-96 mb-1 hover:transition-transform ease-in-out
-            hover:scale-100 duration-300 ">
+            hover:scale-100 duration-300 cursor-grab">
               <div></div> 
               <div className="w-full h-72 inset-shadow-inherit rounded-xl">
                 <img src={project.image } alt="image" className="w-full h-full bg-cover"></img>
               </div>
               <div className="mt-3 font-bold text-gray-800 m-3">{project.title}</div>
-              <div className="mt-3 text-gray-800 m-3">{project.description}</div>
+              <div className="mt-3 text-gray-800 m-3">{project.description.slice(0,100)}...</div>
 
               <div className=" w-full justify-between flex p-3  ">
                 <button className=" cursor-pointer text-white bg-gray-800 rounded-full w-2/5 h-10 "
