@@ -25,6 +25,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   cursor: url("../../public/images/cursor.png"),auto;
   scroll-behavior: smooth;
+  color: #0a0a0a;
 }
 
 html {

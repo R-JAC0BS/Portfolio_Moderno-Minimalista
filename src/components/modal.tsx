@@ -40,7 +40,6 @@ export default function Modal({
 
     } else {
       setAnimate(false);
-      // espera a animação acabar antes de remover do DOM
       setTimeout(() => setVisible(false), 300);
       document.body.style.overflow = "";
       document.getElementById("header")?.classList.remove("hidden");
@@ -62,12 +61,12 @@ export default function Modal({
       }`}
     >
       <div
-        className={`bg-white w-3/5 h-5/6 rounded-2xl shadow-lg flex flex-col p-5
+        className={`bg-white w-3/5 h-11/12 rounded-2xl shadow-lg flex flex-col p-5
           transform transition-transform duration-300
           ${animate ? "opacity-100 scale-100" : "opacity-0 scale-95"}`}
         onClick={(e) => e.stopPropagation()}
       >
-        <div className="w-full flex justify-end items-end p-2">
+        <div className="w-full flex justify-end items-end ">
           <button onClick={onClose}>
             <IoCloseCircleOutline
               size={30}
@@ -82,9 +81,9 @@ export default function Modal({
             <img src={image} className="w-full h-full object-cover rounded-2xl"></img>
           </div>
         </div>
-        <div className="pl-5">
-          <h1 className="text-gray-800 font-bold text-2xl">{title}</h1>
-          <p>{description}</p>
+        <div className="pl-5 max-h-32 ">
+          <h1 className="text-gray-800 font-bold text-2xl mb-1">{title}</h1>
+          <p className = {`max-h-18 break-words overflow-auto`}>{description}</p>
 
           <ul className="flex gap-5 mt-2">
             {tecnologias?.map((tec, index) => (

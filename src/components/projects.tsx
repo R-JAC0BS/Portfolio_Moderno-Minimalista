@@ -57,11 +57,11 @@ export default function Projects() {
         ></Modal>
         {projects.map((project) => (
           <SwiperSlide key={project.id} className="">
-            <div className="bg-white  rounded-lg  w-min-h-96 mb-1 hover:transition-transform ease-in-out
-            hover:scale-100 duration-300 cursor-grab">
+            <div className="bg-white  rounded-xl  w-min-h-96 mb-1 hover:transition-transform ease-in-out rounded-xl
+            hover:scale-100 duration-300 cursor-grab shadow-lg p-2">
               <div></div> 
               <div className="w-full h-72 inset-shadow-inherit rounded-xl">
-                <img src={project.image } alt="image" className="w-full h-full bg-cover"></img>
+                <img src={project.image } alt="image" className="w-full h-full bg-cover rounded-xl"></img>
               </div>
               <div className="mt-3 font-bold text-gray-800 m-3">{project.title}</div>
               <div className="mt-3 text-gray-800 m-3">{project.description.slice(0,100)}...</div>
@@ -72,7 +72,7 @@ export default function Projects() {
                     setOpenModal(true);
                     setSelectProject(project)
                   }} >Detalhes</button>
-                <button className=" cursor-pointer text-black border  rounded-full w-2/5 h-10"> <a href={project.details.link} target="_blank">Github</a></button>
+                <button className=" cursor-pointer text-black border   rounded-full w-2/5 h-10"> <a href={project.details.link} target="_blank">Github</a></button>
 
               </div>
 

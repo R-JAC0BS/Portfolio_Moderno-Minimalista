@@ -4,15 +4,14 @@
             "id" : 1,
             "title" : "Portifólio Minimalista ",
             "description" : 
-            "Um portfólio pessoal desenvolvido com Next.js, TypeScript e Tailwind CSS, apresentando minhas habilidades e projetos.",
+            "Projeto de portfólio pessoal construído com Next.js, TypeScript e Tailwind CSS, com o objetivo de apresentar minhas competências como desenvolvedor(a), incluindo experiências, habilidades técnicas e projetos realizados de forma responsiva e moderna.",
             "image" : "../images/PortiFolioMockUp.png",
             "details" : {
                 "tecnologias" : [
                     "Next.js",
                     "TypeScript",
                     "Tailwind CSS",
-                    "Java",
-                    "SpringBoot"
+                    "React"
                 ],
                 "link" : "https://github.com/R-JAC0BS/Portfolio_Moderno-Minimalista"
                 
@@ -21,8 +20,9 @@
         },
         {
           "id" : 2,
-          "title" : "CuraBackEnd",
-          "description" : "Um portfólio pessoal desenvolvido com Next.js, TypeScript e Tailwind CSS, apresentando minhas habilidades e projetos.",
+          "title" : "CuraApp",
+          "description" : 
+          "Aplicação full stack desenvolvida com Java (Spring Boot) e HTML/CSS/JS puros, focada na gestão de pacientes (CRUD) e no monitoramento ambiental em tempo real via sensores IoT. Utiliza RabbitMQ para comunicação assíncrona, WebSocket para atualização em tempo real e autenticação com JWT. Dados captados por sensores (DHT11, MQ-135, LM393, LDR) são enviados por um Raspberry Pi atuando como gateway.",
           "image" : "../images/DeckMockUp.png",
           "details" : {
               "tecnologias" : [

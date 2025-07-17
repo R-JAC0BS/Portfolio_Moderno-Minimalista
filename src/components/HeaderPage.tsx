@@ -3,7 +3,7 @@ import { CiLinkedin } from "react-icons/ci";
 import Link from "next/link";
 
 
-const decoration = " relative before:absolute before:bottom-0 before:left-0 before:h-1 before:w-full before:origin-left before:scale-x-0 before:bg-black  before:transition-transform before:duration-300 before:ease-in-out hover:before:scale-x-100";
+const decoration = " relative before:absolute before:bottom-0 font before:left-0 before:h-1 before:w-full before:origin-left before:scale-x-0 before:bg-black  before:transition-transform before:duration-300 before:ease-in-out hover:before:scale-x-100";
 
 export default function HeaderPage() {
   return (
@@ -11,7 +11,7 @@ export default function HeaderPage() {
       className="w-8/12 max-w-7xl h-14 px-4 fixed top-3 left-1/2 -translate-x-1/2 z-40
   flex justify-end items-center rounded-full shadow-sm
   bg-white/50 backdrop-blur-xl backdrop-saturate-200
-  border border-white/10
+  border border-white/10 text-black
   bg-clip-padding overflow-hidden"
       id="header"
     >
