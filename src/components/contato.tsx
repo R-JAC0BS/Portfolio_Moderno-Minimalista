@@ -1,25 +1,36 @@
 "use client";
 import { useRef, useState } from "react";
 import emailjs from "emailjs-com";
+import routes from "@/assets/keyValue";
+
+import { FaCheck } from "react-icons/fa";
 
 export default function Contato() {
   const form = useRef<HTMLFormElement>(null);
   const [sent, setSent] = useState(false);
+  const [send, setSend] = useState (false)
 
   const sendEmail = (e: React.FormEvent) => {
+   
     e.preventDefault();
     if (!form.current) return;
 
+   
+
     emailjs
       .sendForm(
-        "service_dnjj7tl",      
-        "template_mc2p8b8",     
+        `${routes.servico}`,      
+        `${routes.template}`,     
         form.current,
-        "thGmhBJTZ_KnCYxi_"          
+        `${routes.key}`          
       )
       .then(
         () => {
           setSent(true);
+          setSend(true)
+          setTimeout (() => {
+            setSend(false)
+          },2000)
           form.current?.reset();
 
         },
@@ -56,12 +67,13 @@ export default function Contato() {
         ></textarea>
         <button
           type="submit"
-          className="w-4/12 bg-black text-white py-3 hover:bg-gray-800 transition cursor-pointer rounded-3xl mx-auto block"
+          className="w-4/12 bg-black text-white py-3 hover:bg-gray-800 transition cursor-pointer rounded-3xl mx-auto block
+          justify-center items-center flex"
         >
-          Enviar mensagem
+          {!send ? "Enviar mensagem " : <FaCheck size={24}/>}
         </button>
         {sent && (
-          <p className="text-green-600 mt-4 ">Mensagem enviada com sucesso!</p>
+          <p className="text-green-600 mt-4 "></p>
         )}
       </form>
     </div>

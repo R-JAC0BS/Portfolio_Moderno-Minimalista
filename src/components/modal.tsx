@@ -10,6 +10,7 @@ type ModalProps = {
   tecnologias?: string[];
   description?: string;
   image?: string;
+  link ?: string;
 };
 
 export default function Modal({
@@ -19,7 +20,8 @@ export default function Modal({
   children,
   tecnologias,
   description,
-  image
+  image,
+  link
 }: ModalProps) {
   const [visible, setVisible] = useState(false);
   const [animate, setAnimate] = useState(false);
@@ -56,12 +58,12 @@ export default function Modal({
 
   return (
     <div
-      className={`z-50 fixed inset-0 flex w-full h-full justify-center items-center backdrop-blur-sm  bg-opacity-30 transition-opacity duration-300 ${
+      className={`z-50 fixed inset-0 flex w-full h-full justify-center items-center backdrop-blur-sm  bg-opacity-30 p-3 transition-opacity duration-300 ${
         animate ? "opacity-100" : "opacity-0"
       }`}
     >
       <div
-        className={`bg-white w-3/5 h-11/12 rounded-2xl shadow-lg flex flex-col p-5
+        className={`bg-white w-3/5 h-12/12 rounded-2xl shadow-lg flex flex-col p-5
           transform transition-transform duration-300
           ${animate ? "opacity-100 scale-100" : "opacity-0 scale-95"}`}
         onClick={(e) => e.stopPropagation()}
@@ -81,9 +83,9 @@ export default function Modal({
             <img src={image} className="w-full h-full object-cover rounded-2xl"></img>
           </div>
         </div>
-        <div className="pl-5 max-h-32 ">
+        <div className="pl-5 max-h-28 ">
           <h1 className="text-gray-800 font-bold text-2xl mb-1">{title}</h1>
-          <p className = {`max-h-18 break-words overflow-auto`}>{description}</p>
+          <p className = {`max-h-17 break-words overflow-auto`}>{description}</p>
 
           <ul className="flex gap-5 mt-2">
             {tecnologias?.map((tec, index) => (
@@ -97,10 +99,10 @@ export default function Modal({
           </ul>
 
           <a
-            href="https://github.com.br"
+            href= {link}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex bg-black text-white rounded-2xl px-5 py-3 shadow-lg mt-5 hover:bg-gray-800 transition w-48 justify-between"
+            className="flex bg-black text-white rounded-2xl px-5 py-3 shadow-lg mt-3 hover:bg-gray-800 transition w-48 justify-between"
           >
             Ver no GitHub <CiShare1 size={25} />
           </a>

@@ -1,4 +1,6 @@
 {
     "nome" : "Roberto Jacobs",
-    "descricao" : "I am a passionate developer with a love for creating user-friendly applications. My expertise lies in web development, particularly in building responsive and accessible interfaces. I enjoy innovative solutions. My journey in tech has been driven by curiosity and a desire to learn continuously."
+    "descricao" :
+     "Como estudante de Ciências da Computação e desenvolvedor em formação, tenho me dedicado à construção de soluções completas, tanto no back-end quanto no front-end. Meus estudos e projetos têm me proporcionado uma base sólida em algoritmos, estruturas de dados, desenvolvimento web e práticas de engenharia de software. Estou constantemente em busca de aprimorar minhas habilidades técnicas e aplicá-las em projetos reais.",
+     "image" : "../images/Character.jpeg"
 }

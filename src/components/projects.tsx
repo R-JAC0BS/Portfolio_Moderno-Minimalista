@@ -53,7 +53,7 @@ export default function Projects() {
       >
         <Modal isOpen={openModal} onClose={() => setOpenModal(false)} title={selectProject?.title}
           description={selectProject?.description} tecnologias={selectProject?.details.tecnologias}
-          image={selectProject?.image}
+          image={selectProject?.image} link = {selectProject?.details.link}
         ></Modal>
         {projects.map((project) => (
           <SwiperSlide key={project.id} className="">

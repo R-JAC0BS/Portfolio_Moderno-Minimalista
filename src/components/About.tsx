@@ -1,20 +1,40 @@
+"use client";
+
+import { useState , useEffect, useRef} from "react";
+
+type About = {
+  nome: string
+  descricao : string
+  image  ?: string
+}
+
 export default function About() {
+  const [about, setAbout] = useState<About>()
+
+    useEffect(() => {
+      fetch("/data/sobre.json")
+        .then((res) => res.json())
+        .then((data: About) => {
+          setAbout(data); // ✅ Aqui está o ajuste
+        })
+        .catch((err) => console.error("Erro ao carregar JSON:", err));
+    }, []);
+      
+
+
+
   return (
     <div className="max-w-6xl mx-auto py-16 px-4 grid md:grid-cols-3 gap-10 items-center">
       {/* Imagem */}
       <div className="flex justify-center items-center">
-        <div className="rounded-full bg-cyan-900 w-60 h-60" id="ImageAbout" />
+         <img src={about?.image} className="rounded-full bg-cyan-900 w-70 h-70 mr-2 shadow" id="ImageAbout"></img>
       </div>
 
       {/* Texto e botão */}
       <div className="md:col-span-2 space-y-6">
-        <h1 className="text-3xl font-bold text-gray-800">Roberto jacobs <br></br>Desenvolvedor Full Stack</h1>
+        <h1 className="text-4xl font-bold text-gray-800"> {about?.nome} <br></br> <em>Desenvolvedor Full Stack</em></h1>
         <p className="text-gray-600 text-justify">
-          I am a passionate developer with a love for creating user-friendly
-          applications. My expertise lies in web development, particularly in
-          building responsive and accessible interfaces. I enjoy innovative
-          solutions. My journey in tech has been driven by curiosity and a
-          desire to learn continuously.
+            {about?.descricao}
         </p>
 
         <div className="flex justify-center mt-6 items-start">
