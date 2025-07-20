@@ -50,6 +50,29 @@ Nessa pasta, você encontrará 3 arquivos `.json` que controlam as informações
 - Liste aqui as **tecnologias** que você domina ou tem familiaridade.
 - Elas aparecerão na seção de habilidades.
 
+
+#### Para adicionar seu email para contato siga o seguinte passos
+
+Para adicionar seu email para contato siga o seguinte passos
+Faça cadastro no site https://dashboard.emailjs.com/sign-in
+
+Após isso troque as informções abaixo pelo da sua conta
+
+```
+const routes = {
+    servico :  "Seu service ", 
+    template : "Seu template", 
+    key :  " Sua api Key "   
+}
+
+
+```
+
+```bash
+/src/assets/keyValue
+```
+
+
 ---
 
 ## 📁 Estrutura do Projeto
