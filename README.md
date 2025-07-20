@@ -1,36 +1,90 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🧑‍💻 Portfólio Minimalista
 
-## Getting Started
+Um portfólio moderno e minimalista, de fácil uso e personalização. Ideal para desenvolvedores que desejam exibir seus projetos, habilidades e informações pessoais de forma clara e objetiva.
 
-First, run the development server:
+---
+
+## 🚀 Primeiros Passos
+
+### 1. Clone o Repositório
+
+```bash
+git clone https://github.com/R-JAC0BS/Portfolio_Moderno-Minimalista.git
+```
+
+### 2. Instale as Dependências
+
+```bash
+npm install
+```
+
+### 3. Inicie o Projeto
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abra [http://localhost:3000](http://localhost:3000) no seu navegador para visualizar o portfólio.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🛠️ Como Personalizar
 
-## Learn More
+Abra o projeto no **VS Code** (ou no editor de sua preferência) e acesse a pasta:
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+/public/data/
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Nessa pasta, você encontrará 3 arquivos `.json` que controlam as informações do portfólio:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### `projects.json`
+- Responsável pelos dados dos **cards de projetos**.
+- Adicione ou edite os projetos que deseja exibir no portfólio.
 
-## Deploy on Vercel
+### `sobre.json`
+- Contém informações pessoais como **nome**, **descrição**, **resumo**, etc.
+- Altere esse arquivo para personalizar a seção "Sobre Mim".
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### `tecnologias.json`
+- Liste aqui as **tecnologias** que você domina ou tem familiaridade.
+- Elas aparecerão na seção de habilidades.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 📁 Estrutura do Projeto
+
+```
+Portfolio_Moderno-Minimalista/
+├── public/
+│   └── data/
+│       ├── projects.json
+│       ├── sobre.json
+│       └── tecnologias.json
+├── src/
+│   └── ...
+├── package.json
+└── ...
+```
+
+---
+
+## 💡 Dicas
+
+- Mantenha os arquivos JSON bem formatados para evitar erros.
+- Imagens de projetos podem ser adicionadas na pasta `public/images/` e referenciadas no `projects.json`.
+- Edite estilos e cores no arquivo de temas (caso queira uma identidade visual personalizada).
+
+---
+
+## 📌 Requisitos
+
+- Node.js instalado
+- Navegador moderno
+- Editor de código (recomendado: VS Code)
+
+---
+
+## 📬 Contato
+
+Caso tenha dúvidas ou sugestões, sinta-se à vontade para abrir uma issue ou contribuir com o projeto.
