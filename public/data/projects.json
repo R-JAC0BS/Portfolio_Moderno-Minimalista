@@ -2,82 +2,18 @@
     "Projects" : [
         {
             "id" : 1,
-            "title" : "Portifólio Minimalista ",
+            "title" : "Titulo Portifolio ",
             "description" : 
-            "Projeto de portfólio pessoal construído com Next.js, TypeScript e Tailwind CSS, com o objetivo de apresentar minhas competências como desenvolvedor(a), incluindo experiências, habilidades técnicas e projetos realizados de forma responsiva e moderna.",
-            "image" : "../images/PortiFolioMockUp.png",
+            "Sua descricao",
+            "image" : "Caminho da sua imagem ",
             "details" : {
                 "tecnologias" : [
-                    "Next.js",
-                    "TypeScript",
-                    "Tailwind CSS",
-                    "React",
-                    "teste"
+                    "Suas tecnlogias",
+                    "Suas tecnlogias"
+                  
              
                 ],
-                "link" : "https://github.com/R-JAC0BS/Portfolio_Moderno-Minimalista"
-                
-            }
-            
-        },
-        {
-          "id" : 2,
-          "title" : "CuraApp",
-          "description" : 
-          "Aplicação full stack desenvolvida com Java (Spring Boot) e HTML/CSS/JS puros, focada na gestão de pacientes (CRUD) e no monitoramento ambiental em tempo real via sensores IoT. Utiliza RabbitMQ para comunicação assíncrona, WebSocket para atualização em tempo real e autenticação com JWT. Dados captados por sensores (DHT11, MQ-135, LM393, LDR) são enviados por um Raspberry Pi atuando como gateway.",
-          "image" : "../images/DeckMockUp.png",
-          "details" : {
-              "tecnologias" : [
-                  "Java",
-                  "SprinBoot",
-                  "Python",
-                  "C",
-                  "HTML",
-                  "CSS",
-                  "JavaScript",
-                  "RabbitMQ",
-                  "PostGresSql"
-              ],
-              "link" : "https://github.com/R-JAC0BS/CuraBackEnd"
-              
-          }
-          
-      },
-           {
-            "id" : 3,
-            "title" : "GoBarApi (BackEnd)",
-            "description" : 
-            "Back-end desenvolvido para um aplicativo de geolocalização de bares, com funcionalidades completas de CRUD (criação, leitura, atualização e exclusão). A aplicação permite aos usuários adicionar e remover bares, favoritar estabelecimentos, deixar comentários e utilizar autenticação JWT para gerenciamento seguro de sessões e controle de acesso.",
-            "image" : "../images/MockUpGoBar.png",
-            "details" : {
-                "tecnologias" : [
-                    "Java",
-                    "SpringBoot",
-                    "PostGresSql",
-                    "Cloudinary",
-                    "Api REST",
-                    "Docker"
-                ],
-                "link" : "https://github.com/R-JAC0BS/GooBarAPI"
-                
-            }
-            
-        },
-          {
-            "id" : 4,
-            "title" : "ChatWebSocket",
-            "description" : 
-            "Chat desenvolvido para estudo pessoal de webSocket, utilizando a biblioteca Stomp para fazer o serviço de mensageria ",
-            "image" : "../images/PortiFolioMockUp.png",
-            "details" : {
-                "tecnologias" : [
-                    "Java",
-                    "SprinBoot",
-                    "React",
-                    "Tailwind CSS",
-                    "Stomp"
-                ],
-                "link" : "https://github.com/R-JAC0BS/ChatWebSocket"
+                "link" : "Seu link do GitHub"
                 
             }
             
