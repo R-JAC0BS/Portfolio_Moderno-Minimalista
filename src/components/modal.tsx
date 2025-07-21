@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { IoCloseCircleOutline } from "react-icons/io5";
 import { CiShare1 } from "react-icons/ci";
+import Image from "next/image";
 
 type ModalProps = {
   isOpen: boolean;
@@ -10,7 +11,7 @@ type ModalProps = {
   tecnologias?: string[];
   description?: string;
   image?: string;
-  link ?: string;
+  link?: string;
 };
 
 export default function Modal({
@@ -38,14 +39,14 @@ export default function Modal({
       setTimeout(() => setAnimate(true), 10);
       document.body.style.overflow = "hidden";
       document.getElementById("header")?.classList.add("hidden");
-  
+
 
     } else {
       setAnimate(false);
       setTimeout(() => setVisible(false), 300);
       document.body.style.overflow = "";
       document.getElementById("header")?.classList.remove("hidden");
-  
+
     }
 
     return () => {
@@ -58,9 +59,8 @@ export default function Modal({
 
   return (
     <div
-      className={`z-50 fixed inset-0 flex w-full h-full justify-center items-center backdrop-blur-sm  bg-opacity-30 p-3 transition-opacity duration-300 ${
-        animate ? "opacity-100" : "opacity-0"
-      }`}
+      className={`z-50 fixed inset-0 flex w-full h-full justify-center items-center backdrop-blur-sm  bg-opacity-30 p-3 transition-opacity duration-300 ${animate ? "opacity-100" : "opacity-0"
+        }`}
     >
       <div
         className={`bg-white w-3/5 h-12/12 rounded-2xl shadow-lg flex flex-col p-5
@@ -79,13 +79,18 @@ export default function Modal({
         </div>
 
         <div className="w-full h-4/6 flex justify-center items-center p-5 pl-5 pr-5">
-          <div className="w-full h-full rounded-2xl shadow-lg ">
-            <img src={image} className="w-full h-full object-cover rounded-2xl"></img>
+          <div className="relative w-full h-full rounded-2xl shadow-lg">
+            <Image
+              src={image || "/default.jpg"}
+              alt="Modal Image"
+              fill
+              style={{ objectFit: 'cover' }}
+            />
           </div>
         </div>
         <div className="pl-5 max-h-28 ">
           <h1 className="text-gray-800 font-bold text-2xl mb-1">{title}</h1>
-          <p className = {`max-h-17 break-words overflow-auto`}>{description}</p>
+          <p className={`max-h-17 break-words overflow-auto`}>{description}</p>
 
           <ul className="flex gap-5 mt-2">
             {tecnologias?.map((tec, index) => (
@@ -99,7 +104,7 @@ export default function Modal({
           </ul>
 
           <a
-            href= {link}
+            href={link}
             target="_blank"
             rel="noopener noreferrer"
             className="flex bg-black text-white rounded-2xl px-5 py-3 shadow-lg mt-3 hover:bg-gray-800 transition w-48 justify-between"

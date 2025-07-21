@@ -1,5 +1,4 @@
-import { PiGithubLogo } from "react-icons/pi";
-import { CiLinkedin } from "react-icons/ci";
+
 
 
 export default function MarginComponent() {

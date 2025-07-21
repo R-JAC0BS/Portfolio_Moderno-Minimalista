@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FaArrowRightArrowLeft } from "react-icons/fa6";
+import Image from "next/image";
 import Modal from '@/components/modal'
 import "swiper/css"; // necessário para funcionar corretamente
 
@@ -61,7 +62,7 @@ export default function Projects() {
             hover:scale-100 duration-300 cursor-grab shadow-lg p-2">
               <div></div> 
               <div className="w-full h-72 inset-shadow-inherit rounded-xl">
-                <img src={project.image } alt="image" className="w-full h-full bg-cover rounded-xl"></img>
+                <Image src={project.image } width={280} height={280} alt="image" className="w-full h-full bg-cover rounded-xl"></Image>
               </div>
               <div className="mt-3 font-bold text-gray-800 m-3">{project.title}</div>
               <div className="mt-3 text-gray-800 m-3">{project.description.slice(0,100)}...</div>
