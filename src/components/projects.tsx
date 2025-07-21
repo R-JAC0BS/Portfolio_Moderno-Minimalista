@@ -61,7 +61,7 @@ export default function Projects() {
             hover:scale-100 duration-300 cursor-grab shadow-lg p-2">
               <div></div> 
               <div className="w-full h-72 inset-shadow-inherit rounded-xl">
-                <img src={project.image } alt="image" className="w-full h-full bg-cover rounded-xl"></img>
+                <img src={project.image } alt="Imagem Do projeto aqui" className="w-full h-full bg-cover rounded-xl"></img>
               </div>
               <div className="mt-3 font-bold text-gray-800 m-3">{project.title}</div>
               <div className="mt-3 text-gray-800 m-3">{project.description.slice(0,100)}...</div>

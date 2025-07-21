@@ -32,7 +32,7 @@ export default function About() {
 
       {/* Texto e botão */}
       <div className="md:col-span-2 space-y-6">
-        <h1 className="text-4xl font-bold text-gray-800"> {about?.nome} <br></br> <em>Desenvolvedor Full Stack</em></h1>
+        <h1 className="text-4xl font-bold text-gray-800"> {about?.nome} <br></br> <em>Desenvolvedor </em></h1>
         <p className="text-gray-600 text-justify">
             {about?.descricao}
         </p>

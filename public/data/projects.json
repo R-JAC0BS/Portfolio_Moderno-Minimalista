@@ -17,6 +17,24 @@
                 
             }
             
+        },
+          {
+            "id" : 2,
+            "title" : "Titulo Portifolio ",
+            "description" : 
+            "Sua descricao",
+            "image" : "Caminho da sua imagem ",
+            "details" : {
+                "tecnologias" : [
+                    "Suas tecnlogias",
+                    "Suas tecnlogias"
+                  
+             
+                ],
+                "link" : "Seu link do GitHub"
+                
+            }
+            
         }
 
     ]
