@@ -4,9 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { useEffect, useState } from "react";
 import { Autoplay } from "swiper/modules";
 
-type Tecnologia = {
-    tecnologias: string[]
-}
+
 
 export default function Tecnologias() {
     const [minhasTecnologias, setTecnologias] = useState<string[]>([])

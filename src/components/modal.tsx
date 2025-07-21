@@ -7,7 +7,6 @@ type ModalProps = {
   isOpen: boolean;
   onClose: () => void;
   title?: string;
-  children?: React.ReactNode;
   tecnologias?: string[];
   description?: string;
   image?: string;
@@ -18,7 +17,6 @@ export default function Modal({
   isOpen,
   onClose,
   title,
-  children,
   tecnologias,
   description,
   image,
