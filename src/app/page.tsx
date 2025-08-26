@@ -4,6 +4,7 @@ import Projects from "@/components/projects";
 import About from "@/components/About";
 import Tecnologias from "@/components/tecnlogias";
 import Contato from "@/components/contato"
+import BackToTopButton from "@/components/BackToTopButton";
 
 export default function Home() {
   return (
@@ -14,7 +15,7 @@ export default function Home() {
       <Projects />
       <Tecnologias/>
       <Contato/>
-
+      <BackToTopButton />
     </div>
   );
 }

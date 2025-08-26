@@ -32,18 +32,18 @@ export default function About() {
             alt="Imagem de perfil"
             width={280}
             height={280}
-            className="rounded-full bg-cyan-900 w-[280px] h-[280px] mr-2 shadow"
+            className="rounded-full bg-cyan-900 w-[200px] h-[200px] sm:w-[280px] sm:h-[280px] mr-2 shadow"
             id="ImageAbout"
           />
         ) : (
           // Placeholder ou loading state
-          <div className="w-[280px] h-[280px] bg-gray-300 animate-pulse rounded-full" />
+          <div className="w-[200px] h-[200px] sm:w-[280px] sm:h-[280px] bg-gray-300 animate-pulse rounded-full" />
         )}
       </div>
 
       {/* Texto e botão */}
       <div className="md:col-span-2 space-y-6">
-        <h1 className="text-4xl font-bold text-gray-800">
+        <h1 className="text-3xl sm:text-4xl font-bold text-gray-800">
           {about?.nome ?? "Carregando..."} <br />
           <em>Desenvolvedor Full Stack</em>
         </h1>
@@ -55,7 +55,7 @@ export default function About() {
           <a
             className="inline-flex items-center justify-center bg-gray-800 text-white
                        rounded-full hover:bg-gray-700 transition-colors duration-300
-                       h-12 w-96 text-lg font-semibold
+                       h-12 w-full sm:w-96 text-lg font-semibold
                        shadow-lg hover:shadow-xl focus:outline-none focus:ring-2 cursor-pointer"
             href="https://github.com/R-JAC0BS"
             target="_blank"

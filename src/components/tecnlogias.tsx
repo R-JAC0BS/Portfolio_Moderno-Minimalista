@@ -20,10 +20,8 @@ export default function Tecnologias() {
 
 
     return (
-        <div className="h-full  justify-center flex " id = "tecnologias">
-
-            <div className=" flex z-0 h-18 w-10/12 justify-center flex items-center overflow-hidden pl-3.5 pr-3.5 " id="">
-
+        <div className="h-full justify-center flex" id="tecnologias">
+            <div className="flex z-0 h-18 w-full sm:w-11/12 md:w-10/12 justify-center flex items-center overflow-hidden pl-3.5 pr-3.5">
                 <Swiper
                     spaceBetween={50}
                     modules={[Autoplay]}

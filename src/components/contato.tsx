@@ -45,9 +45,9 @@ export default function Contato() {
   return (
     <div className="flex flex-col items-center justify-center p-3 h-1/3 resize-none   " id = "contato">
       <h2 className="text-3xl font-bold mb-6 text-gray-800">Entre em contato</h2>
-      <div className="flex flex-row w-full justify-center items-start gap-16">
+      <div className="flex flex-col md:flex-row w-full justify-center items-center md:items-start gap-16">
         {/* Contact cards will go here */}
-        <div className="flex flex-col gap-4 w-1/3 pt-8">
+        <div className="flex flex-col gap-4 w-full md:w-1/3 pt-8">
           <article className="flex flex-col items-center  bg-white p-4 rounded-2xl  bg-amber-800 gap-2">
             <FaEnvelope className="text-2xl" />
             <h4 className="font-bold">Email</h4>
@@ -88,7 +88,7 @@ export default function Contato() {
         <form
           ref={form}
           onSubmit={sendEmail}
-          className=" bg-white p-6 rounded-3xl shadow-lg bg-amber-800 w-5/12 items-center justify-center resize-none "
+          className=" bg-white p-6 rounded-3xl shadow-lg bg-amber-800 w-full md:w-5/12 items-center justify-center resize-none "
         >
           <input
             type="text"
