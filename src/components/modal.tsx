@@ -57,7 +57,7 @@ export default function Modal({
 
   return (
     <div
-      className={`z-50 fixed inset-0 flex w-full h-full justify-center items-center backdrop-blur-sm  bg-opacity-30 p-3 transition-opacity duration-300 ${animate ? "opacity-100" : "opacity-0"
+      className={`z-50 fixed inset-0 flex w-full h-full justify-center items-center backdrop-blur-sm backdrop-brightness-50  bg-opacity-30 p-3 transition-opacity duration-300 ${animate ? "opacity-100" : "opacity-0"
         }`}
     >
       <div

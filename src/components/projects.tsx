@@ -34,11 +34,9 @@ export default function Projects() {
   }, []);
 
   return (
-    <div
-      className="w-full sm:w-11/12 md:w-8/12 max-w-7xl mx-auto mt-10 pb-5"
-      id="projetos"
-    >
-      <div className="flex align-middle justify-between">
+    <div className="w-8/12 max-w-7xl mx-auto mt-10 inline 
+     w-full  pb-5 " id = "projetos">
+      <div className = "flex align-middle justify-between" >
         <h1 className="text-3xl font-bold mb-3 text-gray-800">Projetos</h1>
         <FaArrowRightArrowLeft size = {30}/>
       </div>
@@ -59,9 +57,9 @@ export default function Projects() {
           image={selectProject?.image} link = {selectProject?.details.link}
         ></Modal>
         {projects.map((project) => (
-          <SwiperSlide key={project.id} className="">
+          <SwiperSlide key={project.id} className="p-2">
             <div className="bg-white  rounded-xl  w-min-h-96 mb-1 hover:transition-transform ease-in-out rounded-xl
-            hover:scale-100 duration-300 cursor-grab shadow-lg p-2">
+            hover:scale-100 duration-300 cursor-grab shadow-md p-2">
               <div></div> 
               <div className="w-full h-72 inset-shadow-inherit rounded-xl">
                 <Image src={project.image } width={280} height={280} alt="image" className="w-full h-full bg-cover rounded-xl"></Image>
@@ -87,4 +85,3 @@ export default function Projects() {
     </div>
   );
 }
-
