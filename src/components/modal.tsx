@@ -57,15 +57,21 @@ export default function Modal({
 
   return (
     <div
-      className={`z-50 fixed inset-0 flex w-full h-full justify-center items-center backdrop-blur-sm backdrop-brightness-50  bg-opacity-30 p-3 transition-opacity duration-300 ${animate ? "opacity-100" : "opacity-0"
-        }`}
+      className={`z-50 fixed inset-0 flex w-full h-full justify-center 
+        items-center backdrop-blur-sm backdrop-brightness-50  bg-opacity-30 p-3 
+        transition-opacity duration-300 ${animate ? "opacity-100" : "opacity-0 "
+
+        } `}
     >
       <div
-        className={`bg-white w-3/5 h-12/12 rounded-2xl shadow-lg flex flex-col p-5
-          transform transition-transform duration-300
-          ${animate ? "opacity-100 scale-100" : "opacity-0 scale-95"}`}
+        className={`bg-white rounded-2xl shadow-lg flex flex-col 
+    w-full max-w-5xl h-11/12 max-h-[90vh] p-5
+    transform transition-transform duration-300 
+    overflow-y-auto
+    ${animate ? "opacity-100 scale-100" : "opacity-0 scale-95"}`}
         onClick={(e) => e.stopPropagation()}
       >
+
         <div className="w-full flex justify-end items-end ">
           <button onClick={onClose}>
             <IoCloseCircleOutline
@@ -86,15 +92,15 @@ export default function Modal({
             />
           </div>
         </div>
-        <div className="pl-5 max-h-28 ">
+        <div className="pl-5 max-h-28 bg ">
           <h1 className="text-gray-800 font-bold text-2xl mb-1">{title}</h1>
           <p className={`max-h-17 break-words overflow-auto`}>{description}</p>
 
-          <ul className="flex gap-5 mt-2">
+          <ul className="flex flex-wrap gap-5 mt-2  max-w-full">
             {tecnologias?.map((tec, index) => (
               <li
                 key={index}
-                className="bg-gray-200 rounded-2xl shadow px-4 py-1 flex justify-center items-center text-sm"
+                className="bg-gray-200 rounded-2xl shadow px-4 py-1 flex justify-center items-center text-sm "
               >
                 {tec}
               </li>

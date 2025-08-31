@@ -32,12 +32,12 @@ export default function About() {
             alt="Imagem de perfil"
             width={280}
             height={280}
-            className="rounded-full bg-cyan-900 w-[200px] h-[200px] sm:w-[280px] sm:h-[280px] mr-2 shadow"
+            className="rounded-full w-[200px] h-[200px] sm:w-[280px] sm:h-[280px] mr-2 shadow object-cover "
             id="ImageAbout"
           />
         ) : (
-          // Placeholder ou loading state
-          <div className="w-[200px] h-[200px] sm:w-[280px] sm:h-[280px] bg-gray-300 animate-pulse rounded-full" />
+          
+          <div className="relative rounded-full w-[200px] h-[200px] sm:w-[280px] sm:h-[280px] shadow object-cover"/>
         )}
       </div>
 
@@ -57,11 +57,10 @@ export default function About() {
                        rounded-full hover:bg-gray-700 transition-colors duration-300
                        h-12 w-full sm:w-96 text-lg font-semibold
                        shadow-lg hover:shadow-xl focus:outline-none focus:ring-2 cursor-pointer"
-            href="https://github.com/R-JAC0BS"
-            target="_blank"
             rel="noopener noreferrer"
+            href="./CurriCuloEstagioA.pdf" download="documento.pdf"
           >
-            Veja meus projetos
+            Baixar curriculo
           </a>
         </div>
       </div>

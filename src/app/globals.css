@@ -63,3 +63,22 @@ html {
 body::-webkit-scrollbar {
   display: none;
 }
+
+::-webkit-scrollbar {
+  width: 6px; /* largura da barra */
+  height: 6px; /* se precisar em scroll horizontal */
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; /* fundo da barra */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0,0,0,0.3); /* cor do "thumb" (a parte que arrasta) */
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar {
+  width: 6px;   /* vertical */
+  height: 2px;  /* horizontal */
+}
