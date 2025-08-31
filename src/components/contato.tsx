@@ -6,7 +6,7 @@ import routes from "@/assets/keyValue";
 import { FaCheck, FaEnvelope } from "react-icons/fa";
 import { BsLinkedin, BsWhatsapp } from "react-icons/bs";
 import ArticleCard from "./Article";
-import { MdEmail } from "react-icons/md";
+
 
 export default function Contato() {
   const form = useRef<HTMLFormElement>(null);
